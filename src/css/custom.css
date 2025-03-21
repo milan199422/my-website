@@ -1,30 +1,62 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* src/css/custom.css */
 
-/* You can override the default Infima variables here. */
+/* ========== LIGHT MODE ========== */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Primärfarbe (Blau) */
+  --ifm-color-primary: #2b6cb0;
+  --ifm-color-primary-dark: #255e9d;
+  --ifm-color-primary-darker: #21568f;
+  --ifm-color-primary-darkest: #1a4070;
+  --ifm-color-primary-light: #3179bd;
+  --ifm-color-primary-lighter: #3a84c5;
+  --ifm-color-primary-lightest: #4d95d1;
+
+  /* Textfarbe Light Mode (Standard Schwarz) */
+  --ifm-font-color-base: #1a1d24;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* ========== DARK MODE ========== */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Primärfarbe – angepasst für Überschriften */
+  --ifm-color-primary: #64b5f6;       /* 🔵 Sanfteres Blau für Headings im Dark Mode */
+  --ifm-color-primary-dark: #5ca5e0;
+  --ifm-color-primary-darker: #5196cc;
+  --ifm-color-primary-darkest: #4077a3;
+  --ifm-color-primary-light: #7ec3f8;
+  --ifm-color-primary-lighter: #90caf9;
+  --ifm-color-primary-lightest: #a6d4fa;
+
+  /* Textfarbe auf Hellblau */
+  --ifm-font-color-base: #90caf9;
+  --ifm-color-content: #90caf9;
+  --ifm-color-content-secondary: #64b5f6;
 }
+
+/* ========== GLOBALE REGELN ========== */
+/* Überschriften erzwingen Primärfarbe */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* ========== GLOBALE REGELN ========== */
+
+/* Überschriften im Light Mode: Schwarz */
+html:not([data-theme='dark']) h1,
+html:not([data-theme='dark']) h2,
+html:not([data-theme='dark']) h3,
+html:not([data-theme='dark']) h4,
+html:not([data-theme='dark']) h5,
+html:not([data-theme='dark']) h6 {
+  color: #000000 !important;
+}
+
+/* Überschriften im Dark Mode: Primärfarbe (hellblau) */
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6 {
+  color: var(--ifm-color-primary) !important;
+}
+

@@ -3,26 +3,26 @@ id: page1
 title: Page 1
 ---
 
-# Willkommen auf Page 1
+## Willkommen auf Page 1
 Dies ist der Inhalt von Page 1 in Category 1.
 
-# Überschrift 2
+## Überschrift 2
 
 Test Test Test
 
-# Überschrift 3
+## Überschrift 3
 
 Test Test Testu
 
-# Überschrift 4
+## Überschrift 4
 
 Test Test Test
 
-# Überschrift 5
+## Überschrift 5
 
 Test Test Test
 
-# Überschrift 6
+## Überschrift 6
 
 Test Test Testi
 
