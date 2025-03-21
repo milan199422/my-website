@@ -101,13 +101,13 @@ const config = {
 
           // ======= START: Added "Test" section with subcategories =======/////////////////////////////////
           {
-            type: 'doc',
+            type: 'docSidebar',
             // Diese Seite wird angezeigt, wenn man auf "Test" klickt
             sidebarId: 'testSidebar',
-            docId: 'category1/page1', 
+            docId: 'schwachstellenanalyse/page1', 
             docsPluginId: 'test',   // Muss mit "id: 'test'" in deinem Plugin-Eintrag übereinstimmen
             position: 'left',
-            label: 'Test',
+            label: 'Dienstleistungen',
           },
           // ======= END: Added "Test" section with subcategories =======///////////////////////////////////
 

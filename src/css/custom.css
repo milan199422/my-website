@@ -60,3 +60,38 @@ html:not([data-theme='dark']) h6 {
   color: var(--ifm-color-primary) !important;
 }
 
+.markdown > h1:first-of-type {
+  text-align: center;
+  display: block; /* Verhindert Flex-Layout-Probleme */
+  width: 100%; /* Stellt sicher, dass die Überschrift die volle Breite hat */
+  margin: 0 auto; /* Automatische horizontale Zentrierung */
+}
+
+/* Zusätzliche Absicherung für den Docusaurus-Layout-Wrapper */
+article h1 {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Mobile Optimierung */
+@media (max-width: 768px) {
+  .markdown > h1:first-of-type,
+  article h1 {
+    font-size: 2rem;
+  }
+}
+
+h1,h2,h3,h4,h5 h6 {
+  text-align: center;
+}
+
+.markdown img {
+  max-width: 50%;  /* Maximale Breite: 50% des Viewports */
+  height: auto;  /* Automatische Skalierung */
+  display: block;
+  margin: 40px auto; /* 40px oben & unten, automatisch zentriert */
+  /*border-radius: 10px; /* Optional: Abgerundete Ecken */
+}
+
